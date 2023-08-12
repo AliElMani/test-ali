@@ -1,0 +1,63 @@
+.row {
+  display: flex;
+}
+.game {
+  position: relative;
+}
+
+.cell {
+  border: 1px solid black;
+  background-color: white;
+  height: 36px;
+  width: 36px;
+}
+
+.block {
+  background-color: black;
+}
+
+.player {
+  background: url("../img/character.png") no-repeat;
+  background-size: 36px 36px;
+}
+
+.monster {
+  background: url("../img/monster-idle.gif") no-repeat;
+  background-size: 90px 38px;
+  background-position: -27px;
+}
+
+.treasure {
+  background: url("../img/chest.png") no-repeat;
+  background-size: 37px 36px;
+  background-position: -1px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.game-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #aaa;
+  padding: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.restart {
+  margin-top: 20px;
+}
